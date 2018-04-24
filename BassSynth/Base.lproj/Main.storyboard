@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,225 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="viewcontroller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="BassSynth" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg2" translatesAutoresizingMaskIntoConstraints="NO" id="L7c-Ez-E0p">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fwN-6Z-h7i" customClass="Knob" customModule="BassSynth" customModuleProvider="target">
+                                <rect key="frame" x="33" y="70" width="55" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QCZ-2w-Dad" customClass="Knob" customModule="BassSynth" customModuleProvider="target">
+                                <rect key="frame" x="236" y="70" width="55" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wjl-Sn-kYV" customClass="Knob" customModule="BassSynth" customModuleProvider="target">
+                                <rect key="frame" x="236" y="153" width="55" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pWz-0K-y5F" customClass="Knob" customModule="BassSynth" customModuleProvider="target">
+                                <rect key="frame" x="33" y="153" width="55" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S7d-QI-biN" customClass="Knob" customModule="BassSynth" customModuleProvider="target">
+                                <rect key="frame" x="39" y="244" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a1U-la-c2I" customClass="Knob" customModule="BassSynth" customModuleProvider="target">
+                                <rect key="frame" x="109" y="244" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yID-Gz-0vP" customClass="Knob" customModule="BassSynth" customModuleProvider="target">
+                                <rect key="frame" x="178" y="244" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fhR-6P-Ct7" customClass="Knob" customModule="BassSynth" customModuleProvider="target">
+                                <rect key="frame" x="253" y="244" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="0.80000000000000004" translatesAutoresizingMaskIntoConstraints="NO" id="SAb-XJ-HJR">
+                                <rect key="frame" x="141" y="344.5" width="79" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.55124379270000001" green="1" blue="0.9946239912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="1" green="1" blue="1" alpha="0.90119327910958902" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" red="0.25301516349999997" green="0.25063335799999997" blue="0.26062817259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="resonance:" destination="BYZ-38-t0r" eventType="valueChanged" id="ibH-Y8-Ox1"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BKC-bj-kH2">
+                                <rect key="frame" x="141" y="389" width="79.5" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <color key="minimumTrackTintColor" red="0.55124379270000001" green="1" blue="0.9946239912" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="maximumTrackTintColor" red="1" green="1" blue="1" alpha="0.90119327910958902" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="thumbTintColor" red="0.25301516349999997" green="0.25063335799999997" blue="0.26062817259999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="cutoff:" destination="BYZ-38-t0r" eventType="valueChanged" id="RM9-OF-Fic"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GEo-up-Jqz" customClass="Knob" customModule="BassSynth" customModuleProvider="target">
+                                <rect key="frame" x="156" y="40" width="45" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3A4-ke-f3P" customClass="Knob" customModule="BassSynth" customModuleProvider="target">
+                                <rect key="frame" x="264" y="326.5" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BWs-2k-CHX" customClass="EZAudioPlot">
+                                <rect key="frame" x="103" y="105" width="115" height="65"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BJn-fL-zrb">
+                                <rect key="frame" x="24" y="431" width="269" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HC9-lk-GAb">
+                                <rect key="frame" x="27" y="397" width="43" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="SQUAREOFF"/>
+                                <state key="selected" backgroundImage="SQUAREON"/>
+                                <state key="highlighted" backgroundImage="SQUAREON"/>
+                                <connections>
+                                    <action selector="Squarebutton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4kq-8m-lSY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="itU-iH-xfs">
+                                <rect key="frame" x="27" y="337" width="43" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="SINEOFF"/>
+                                <state key="selected" backgroundImage="SINEON"/>
+                                <state key="highlighted" backgroundImage="SINEON">
+                                    <color key="titleShadowColor" red="0.15130915950000001" green="0.27559882610000003" blue="0.27559882610000003" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Sine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Ho-Zp-vCv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNQ-a9-PZM">
+                                <rect key="frame" x="27" y="357" width="43" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="TRIANGLEOFF"/>
+                                <state key="selected" backgroundImage="TRIANGLEON"/>
+                                <state key="highlighted" backgroundImage="TRIANGLEON"/>
+                                <connections>
+                                    <action selector="Triangle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4AP-ia-5nE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KQN-hl-ReK">
+                                <rect key="frame" x="27" y="377" width="43" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="SAWOFF"/>
+                                <state key="selected" backgroundImage="SAWON"/>
+                                <state key="highlighted" backgroundImage="SAWON"/>
+                                <connections>
+                                    <action selector="Sawtooth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zds-a1-T31"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YyV-iq-OCh">
+                                <rect key="frame" x="87" y="338" width="43" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="SINEOFF"/>
+                                <state key="selected" backgroundImage="SINEON"/>
+                                <state key="highlighted" backgroundImage="SINEON"/>
+                                <connections>
+                                    <action selector="osc2sine:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KKC-Bq-YP6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ujC-uN-ZZl">
+                                <rect key="frame" x="87" y="357" width="43" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="TRIANGLEOFF"/>
+                                <state key="selected" backgroundImage="TRIANGLEON"/>
+                                <state key="highlighted" backgroundImage="TRIANGLEON"/>
+                                <connections>
+                                    <action selector="osc2tri:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BiE-CD-EPa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QiD-vy-rGz">
+                                <rect key="frame" x="87" y="377" width="43" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="SAWOFF"/>
+                                <state key="selected" backgroundImage="SAWON"/>
+                                <state key="highlighted" backgroundImage="SAWON"/>
+                                <connections>
+                                    <action selector="osc2saw:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ucb-t9-hTS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vlO-vw-Haa">
+                                <rect key="frame" x="87" y="397" width="43" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="SQUAREOFF"/>
+                                <state key="selected" backgroundImage="SQUAREON"/>
+                                <state key="highlighted" backgroundImage="SQUAREON"/>
+                                <connections>
+                                    <action selector="osc2sqr:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7du-YW-uJV"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nmP-at-rdX" customClass="Knob" customModule="BassSynth" customModuleProvider="target">
+                                <rect key="frame" x="264" y="381" width="35" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.59875326214590174" green="0.66597568730103351" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="AudioPlot" destination="BWs-2k-CHX" id="7MY-GG-xvR"/>
+                        <outlet property="Keyview" destination="BJn-fL-zrb" id="coJ-d5-n5d"/>
+                        <outlet property="attack" destination="S7d-QI-biN" id="fKh-y0-fTv"/>
+                        <outlet property="cutoffview" destination="BKC-bj-kH2" id="Pag-Ep-e2F"/>
+                        <outlet property="decay" destination="a1U-la-c2I" id="bWJ-M4-MOT"/>
+                        <outlet property="kbview" destination="BJn-fL-zrb" id="B4O-e1-0Ua"/>
+                        <outlet property="lfodep" destination="nmP-at-rdX" id="idL-wt-BbD"/>
+                        <outlet property="lforate" destination="3A4-ke-f3P" id="rnb-rm-OPo"/>
+                        <outlet property="mastervolknob" destination="GEo-up-Jqz" id="UFH-GJ-mSa"/>
+                        <outlet property="processone" destination="fwN-6Z-h7i" id="vMu-Ss-sWB"/>
+                        <outlet property="processthree" destination="pWz-0K-y5F" id="Dhu-af-sVd"/>
+                        <outlet property="processtwo" destination="QCZ-2w-Dad" id="PKJ-Hc-j1r"/>
+                        <outlet property="ramptime" destination="wjl-Sn-kYV" id="9Eu-X5-WUx"/>
+                        <outlet property="rellength" destination="fhR-6P-Ct7" id="NIW-6t-bUI"/>
+                        <outlet property="sawlight" destination="KQN-hl-ReK" id="Ujx-du-2kS"/>
+                        <outlet property="sawlight2" destination="QiD-vy-rGz" id="7yM-G1-SzG"/>
+                        <outlet property="sinelight" destination="itU-iH-xfs" id="IL2-MB-nfr"/>
+                        <outlet property="sinelight2" destination="YyV-iq-OCh" id="Sp8-Ec-4ce"/>
+                        <outlet property="squarelight" destination="HC9-lk-GAb" id="jmx-Wk-bqg"/>
+                        <outlet property="squarelight2" destination="vlO-vw-Haa" id="F3V-8N-VuH"/>
+                        <outlet property="sustain" destination="yID-Gz-0vP" id="fGv-5z-UTK"/>
+                        <outlet property="trianglelight" destination="xNQ-a9-PZM" id="Ped-08-RtD"/>
+                        <outlet property="trianglelight2" destination="ujC-uN-ZZl" id="E8z-Ev-V60"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="135" y="132.04225352112675"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="SAWOFF" width="43" height="17"/>
+        <image name="SAWON" width="43" height="17"/>
+        <image name="SINEOFF" width="43" height="17"/>
+        <image name="SINEON" width="43" height="17"/>
+        <image name="SQUAREOFF" width="43" height="17"/>
+        <image name="SQUAREON" width="43" height="17"/>
+        <image name="TRIANGLEOFF" width="43" height="17"/>
+        <image name="TRIANGLEON" width="43" height="17"/>
+        <image name="bg2" width="320" height="568"/>
+    </resources>
 </document>
